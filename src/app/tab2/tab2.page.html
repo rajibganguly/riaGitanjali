@@ -1,0 +1,131 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blocks Details
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label>
+      <h3>BLOCK 1 APARAJITA</h3>
+    </ion-label>
+  </ion-item>
+  <ion-card *ngFor="let nm of blockOneOwner" class="blockOne">
+    <ion-card-header>
+      <ion-card-subtitle>{{nm.name}}</ion-card-subtitle>
+      <ion-card-title>{{nm.floor}}{{nm.flat}}</ion-card-title>
+    </ion-card-header>  
+    <ion-card-content>
+      <p *ngFor="let c of nm.contactnum">
+        <span>{{c}}</span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-label>
+      <h3>BLOCK 2 PUROBI</h3>
+    </ion-label>
+  </ion-item>
+  <ion-card *ngFor="let nm of blockTwoOwner" class="blockTwo">
+    <ion-card-header>
+      <ion-card-subtitle>{{nm.name}}</ion-card-subtitle>
+      <ion-card-title>{{nm.floor}}{{nm.flat}}</ion-card-title>
+    </ion-card-header>  
+    <ion-card-content>
+      <p *ngFor="let c of nm.contactnum">
+        <span>{{c}}</span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-label>
+      <h3>BLOCK 3 MANASI</h3>
+    </ion-label>
+  </ion-item>
+  <ion-card *ngFor="let nm of blockThreeOwner" class="blockThree">
+    <ion-card-header>
+      <ion-card-subtitle>{{nm.name}}</ion-card-subtitle>
+      <ion-card-title>{{nm.floor}}{{nm.flat}}</ion-card-title>
+    </ion-card-header>  
+    <ion-card-content>
+      <p *ngFor="let c of nm.contactnum">
+        <span>{{c}}</span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-label>
+      <h3>BLOCK 4 CHAITALI</h3>
+    </ion-label>
+  </ion-item>
+  <ion-card *ngFor="let nm of blockFourOwner" class="blockFour">
+    <ion-card-header>
+      <ion-card-subtitle>{{nm.name}}</ion-card-subtitle>
+      <ion-card-title>{{nm.floor}}{{nm.flat}}</ion-card-title>
+    </ion-card-header>  
+    <ion-card-content>
+      <p *ngFor="let c of nm.contactnum">
+        <span>{{c}}</span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-label>
+      <h3>BLOCK 5 MAHUA</h3>
+    </ion-label>
+  </ion-item>
+  <ion-card *ngFor="let nm of blockFiveOwner" class="blockFive">
+    <ion-card-header>
+      <ion-card-subtitle>{{nm.name}}</ion-card-subtitle>
+      <ion-card-title>{{nm.floor}}{{nm.flat}}</ion-card-title>
+    </ion-card-header>  
+    <ion-card-content>
+      <p *ngFor="let c of nm.contactnum">
+        <span>{{c}}</span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-label>
+      <h3>BLOCK 6 BITHIKA</h3>
+    </ion-label>
+  </ion-item>
+  <ion-card *ngFor="let nm of blockSixOwner" class="blockSix">
+    <ion-card-header>
+      <ion-card-subtitle>{{nm.name}}</ion-card-subtitle>
+      <ion-card-title>{{nm.floor}}{{nm.flat}}</ion-card-title>
+    </ion-card-header>  
+    <ion-card-content>
+      <p *ngFor="let c of nm.contactnum">
+        <span>{{c}}</span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-label>
+      <h3>BLOCK 7 POTHIK</h3>
+    </ion-label>
+  </ion-item>
+  <ion-card *ngFor="let nm of blockSevenOwner" class="blockSeven">
+    <ion-card-header>
+      <ion-card-subtitle>{{nm.name}}</ion-card-subtitle>
+      <ion-card-title>{{nm.floor}}{{nm.flat}}</ion-card-title>
+    </ion-card-header>  
+    <ion-card-content>
+      <p *ngFor="let c of nm.contactnum">
+        <span>{{c}}</span>
+      </p>
+    </ion-card-content>
+  </ion-card>
+  
+
+  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
+</ion-content>

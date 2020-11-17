@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Search
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-list-header>
+      Search With Name
+    </ion-list-header>
+
+    <ion-item>    
+    <!-- Animated Searchbar -->
+  <ion-searchbar animated></ion-searchbar>
+  </ion-item>
+  <ion-item *ngFor="let nm of blockOwners">
+    <ion-label>
+      <h3>{{nm.name}}</h3>
+    </ion-label>
+  </ion-item>
+
+  </ion-list>
+
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Search with Name</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container name="Search"></app-explore-container> -->
+</ion-content>
+
+

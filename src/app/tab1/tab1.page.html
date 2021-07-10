@@ -14,10 +14,11 @@
 
     <ion-item>    
     <!-- Animated Searchbar -->
-  <ion-searchbar animated></ion-searchbar>
+  <ion-searchbar placeholder="Search..." [(ngModel)]="filterTerm" animated
+  (ionChange)="setFilteredLocations()"></ion-searchbar>
   </ion-item>
-  <ion-item *ngFor="let nm of blockOwners">
-    <ion-label>
+  <ion-item *ngFor="let nm of filterData">
+    <ion-label (click)="getData(nm);">
       <h3>{{nm.name}}</h3>
     </ion-label>
   </ion-item>
